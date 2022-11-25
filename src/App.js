@@ -78,11 +78,6 @@ function App() {
       return (prev = modaldata);
     });
   }
-  function setemptyCart() {
-    setCartArr((prev) => {
-      return (prev = []);
-    });
-  }
   return (
     <div>
       <Header />
@@ -102,11 +97,7 @@ function App() {
           />
         </div>
         <div className="cartcoontainer">
-          <Cart
-            deletecart={setemptyCart}
-            ondeletedata={ondeletedata}
-            cartarr={cartArrState}
-          />
+          <Cart ondeletedata={ondeletedata} cartarr={cartArrState} />
         </div>
       </div>
       <div style={{ height: "60px" }}></div>

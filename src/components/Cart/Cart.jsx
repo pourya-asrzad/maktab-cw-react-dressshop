@@ -2,15 +2,18 @@ import './Cart.css'
 import Headercart from './Headercart'
 import Cartcard from '../CartCard/Cartcard'
 import Proceed from '../procced/Proceed'
-
-function Cart({ cartarr, index, ondeletedata, deletecart }) {
+import Form from '../Form/Form';
+import { useState } from 'react'
+function Cart({ cartarr, index, ondeletedata }) {
     function sendCartId(id) {
         ondeletedata(id);
 
     }
-    function delteCart() {
-        deletecart()
+    const [showForm, setshowForm] = useState('none')
+    function showform() {
+        setshowForm('block')
     }
+
     const cartarrlength = cartarr.length > 0
     let totalprice = 0
     return (
@@ -37,10 +40,11 @@ function Cart({ cartarr, index, ondeletedata, deletecart }) {
             }
             {
                 cartarrlength ?
-                    <Proceed onClick={delteCart} totalprice={totalprice} />
+                    <Proceed onClick={showform} totalprice={totalprice} />
                     : ""
 
             }
+            <Form display={showForm} />
         </div>
     )
 }

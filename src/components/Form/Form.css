@@ -1,0 +1,42 @@
+.Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 20rem;
+    margin-bottom: 30px;
+    animation-name: getform;
+    animation-duration: .9s;
+    position: absolute;
+}
+.Form input{
+    width: 15rem;
+    height: 35px;
+    border: 1px solid grey;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+@keyframes getform {
+    0%{top:5px;}
+    20%{top:7px;}
+    30%{top:9px;}
+    50%{top:11px;}
+    90%{top: 14px;}
+    100%{top: 19px;}
+}
+.fomparent{
+    position: relative;
+    margin-top: 35px;
+    margin-left: 51px;
+}
+.subbtn{
+    width: 16rem;
+    background-color: #f0c041;
+    color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+    height: 45px;
+    margin-bottom: 30px;
+}
