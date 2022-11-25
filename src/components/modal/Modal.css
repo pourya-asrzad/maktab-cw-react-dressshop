@@ -1,0 +1,33 @@
+.Modal{
+    display: flex;
+    position: fixed;
+    top: 2rem;
+    background-color: white;
+    border: 1px solid black;
+    left: 51px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.modal_btn_txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 33px;
+    font-size: 23px;
+}
+.modalbtnprice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
+.cart_btn{
+    border: 0;
+    background-color: #f0c041;
+    cursor: pointer;
+    padding: 16px 25px;
+}
+.longstory{
+    margin-left: 29px;
+    font-size: 18px;
+}

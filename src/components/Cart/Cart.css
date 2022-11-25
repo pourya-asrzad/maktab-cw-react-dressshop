@@ -1,0 +1,16 @@
+.hr2{
+    height: .2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.383);
+}
+.cart{
+    width: 350px;
+    
+}
+.cartheader{
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}

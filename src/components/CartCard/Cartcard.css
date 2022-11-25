@@ -1,0 +1,40 @@
+.Cartcard{
+    margin: 22px 0;  
+    display: flex;
+    justify-content: space-around;
+}
+.cartbtn_tx{
+    display: flex;
+    justify-content: space-evenly;
+}
+.middlecart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.removebtncart{
+    padding: 10px;
+    color: #000;
+    outline: none;
+    border: 1px solid #d3d3d3;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.cartdes{
+    margin-bottom: 13px;
+}
+.procebtn{
+    padding: 12px 20px;
+    background-color: #f0c041;
+    color: #000;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+.proceed{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
