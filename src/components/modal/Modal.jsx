@@ -30,6 +30,7 @@ function Modal({ display, data, hidemodal, addToCart }) {
                                     <Button onclick={() => { addtocart(eleman.id) }} txt='Add To Cart' className='cart_btn' />
                                 </div>
                             </div>
+                            <div className='ghost'></div>
                         </>
                     )
                 }) : ""

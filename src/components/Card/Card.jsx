@@ -12,7 +12,7 @@ function Card({ img, discription, price, id, onAddToCart, onIdToShowModal }) {
     return (
         <div className='card'>
             <img onClick={() => { idToShowModal(id) }} className='cardimg' width="300" src={img} alt={discription} />
-            <div>
+            <div className='cartfooter'>
                 <span className='discription'>{discription}</span>
                 <div className='flexfootercard'>
                     <span>${price}</span>

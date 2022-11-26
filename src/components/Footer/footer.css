@@ -1,9 +1,13 @@
 .footer{
     display: flex;
-
     justify-content: center;
     align-items: center;
     background-color: #203040;
     color: #fff;
     padding: 15px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
 }
